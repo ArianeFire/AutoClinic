@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_file_document_box_black_18dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/ficheName"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:layout_gravity="center"
+            android:text="Fiche name "
+            />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/employ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_worker_black_24dp"
+                android:layout_marginRight="@dimen/ic_marg"
+
+                />
+
+            <ImageButton
+                android:id="@+id/open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ic_marg"
+                android:src="@drawable/ic_open_in_new_black_18dp" />
+
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ic_marg"
+                android:src="@drawable/ic_delete_forever_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/archiverr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/ic_marg"
+                android:src="@drawable/small_arch" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

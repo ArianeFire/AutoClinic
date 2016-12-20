@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Client Part -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/title_vehicule_padding_left"
+            android:layout_marginTop="@dimen/title_vehicule_padding_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:textColor="@color/fab_material_amber_900"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renseignement sur le client"
+                android:textSize="@dimen/titileTextSize"
+                android:textStyle="bold|normal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/form_control_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/form_component_titleSize"
+                />
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                android:textSize="@dimen/form_component_titleSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/form_control_margin_top"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/telm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/form_component_titleSize"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                android:textSize="@dimen/form_component_titleSize"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/form_control_margin_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/form_component_titleSize"
+                />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/form_component_titleSize"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- Vehicule=========================================================> -->
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/title_vehicule_padding_left"
+                android:paddingTop="@dimen/title_vehicule_padding_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_vehicule"
+                    android:textColor="@color/fab_material_amber_900"
+                    android:textSize="@dimen/titileTextSize"
+                    android:textStyle="bold|normal"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fab_material_amber_900"
+                    android:textSize="@dimen/form_component_titleSize"
+                    />
+
+                <TextView
+                    android:id="@+id/assurance"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/form_component_titleSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </LinearLayout>
+
+            <!--Marque layout part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marque"
+                    android:layout_marginRight="@dimen/modele_margin"
+                    android:textSize="@dimen/form_component_titleSize"
+                    />
+
+                <TextView
+                    android:id="@+id/marqueDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_component_margin"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <!--Modele margin part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modele"
+                    android:layout_marginRight="@dimen/modele_margin"
+                    android:textSize="@dimen/form_component_titleSize"
+                    />
+
+                <TextView
+                    android:id="@+id/modeleDisplay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/form_component_margin"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <!--Immatriculation margin part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/immatri"
+                    android:layout_marginRight="@dimen/immat_margin"
+                    android:textSize="@dimen/form_component_titleSize"
+                    />
+
+                <TextView
+                    android:id="@+id/immatriculation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <!--Chasset margin part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chasset"
+                    android:textSize="@dimen/form_component_titleSize"
+                    android:layout_marginRight="@dimen/chasset_margin"
+                    />
+
+                <TextView
+                    android:id="@+id/numChasset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <!--Kilometrage Layout part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kilom"
+                    android:textSize="@dimen/form_component_titleSize"
+                    android:layout_marginRight="@dimen/kilo_margin"
+                    />
+
+                <TextView
+                    android:id="@+id/kilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/carburant"
+                    android:textSize="@dimen/form_component_titleSize"
+                    />
+
+                <TextView
+                    android:id="@+id/niveau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/form_control_margin_top"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                >
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Liste Employer"
+                    android:textSize="@dimen/form_component_titleSize"
+                    />
+
+                <ListView
+                    android:id="@+id/employL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/form_component_titleSize"
+                    >
+
+                </ListView>
+
+            </LinearLayout>
+
+            <!--Button margin part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_control_margin_left"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/takePic"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_photo_camera_black_48dp"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/groupImageLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

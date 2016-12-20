@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.autoclinic.ACTIVITIES.Main2Activity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginMagin"
+            android:src="@drawable/ic_account_circle_black_48dp"
+            app:border="true"
+            app:shadow="true"
+            app:border_color="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="@dimen/form_padding"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_account_box_black_48dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="15"
+                android:hint="Username..."
+                android:inputType="text"
+                android:layout_gravity="bottom"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/form_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_pan_tool_black_48dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minEms="15"
+                android:hint="Password..."
+                android:inputType="textPassword"
+                android:layout_gravity="bottom"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/form_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:src="@drawable/ic_done_white_48dp"
+                app:border="true"
+                app:shadow="true"
+                app:border_color="@color/colorPrimary"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/form_padding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/icon_size"
+                android:text="@string/oubli_mot_de_passe"
+                android:textSize="@dimen/textSize"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

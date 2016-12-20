@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="textSize">25sp</dimen>
+    <dimen name="titileTextSize">20sp</dimen>
+
+    <dimen name="maginRightFrag">30dp</dimen>
+    <dimen name="loginMagin">30dp</dimen>
+    <dimen name="form_padding">40dp</dimen>
+    <dimen name="icon_size">50dp</dimen>
+    <dimen name="title_vehicule_padding">20dp</dimen>
+    <dimen name="title_vehicule_padding_left">50dp</dimen>
+    <dimen name="form_control_margin_left">120dp</dimen>
+    <dimen name="form_control_margin_top">30dp</dimen>
+    <dimen name="form_component_margin">20dp</dimen>
+    <dimen name="form_component_titleSize">25sp</dimen>
+
+    <!--Form control margin -->
+    <dimen name="kilo_margin">110dp</dimen>
+    <dimen name="chasset_margin">120dp</dimen>
+    <dimen name="immat_margin">65dp</dimen>
+    <dimen name="modele_margin">130dp</dimen>
+    <dimen name="ic_marg">12dp</dimen>
+
+    <dimen name="margin_form_display">25dp</dimen>
+    <dimen name="margin_form_display_compo">20dp</dimen>
+
+
+</resources>

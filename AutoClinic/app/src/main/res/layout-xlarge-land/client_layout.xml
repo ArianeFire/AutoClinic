@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/title_vehicule_padding_left"
+        android:layout_marginTop="@dimen/title_vehicule_padding_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Renseignement sur le client"
+        android:textSize="@dimen/titileTextSize"
+        android:textStyle="bold|normal"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/form_control_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems ="20"
+            android:hint="Non du client..."
+            android:inputType="textPersonName"
+            />
+
+         <EditText
+            android:id="@+id/adresse"
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/form_control_margin_left"
+             android:ems ="20"
+            android:hint="Adresse..."
+             android:inputType="textPostalAddress"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/form_control_margin_top"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/telm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems ="20"
+            android:hint="Mobile..."
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/form_control_margin_left"
+            android:ems ="20"
+            android:hint="Nom utilisateur.."
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/form_control_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems ="20"
+            android:hint="Fax..."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/form_control_margin_left"
+            android:ems ="20"
+            android:hint="Tel..."
+            android:inputType="phone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="bottom|right"
+        android:layout_marginTop="@dimen/form_control_margin_top"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/ignore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/ignore"
+        android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/form_control_margin_left"
+            android:background="@color/colorAccent"
+            android:text="@string/nextf"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

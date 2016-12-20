@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Vehicule Info ===================== -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <!-- Marque ImageLayout ========================== -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/marque"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bmw"
+                />
+
+        </LinearLayout>  <!--Marque ImageLayout End -->
+
+        <!--Marque Info Part =========== -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+
+            <!--Modele Logo  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout> <!--Modele logo End-->
+
+            <!-- Immatriculation part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout> <!--Immatriculation part End -->
+
+            <!-- Num Chasset -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout> <!-- Num Chasset End-->
+
+            <!--NiveauCarburant  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </LinearLayout> <!--NiveauCarburant End -->
+
+
+        </LinearLayout>   <!-- Marque Info End -->
+
+    </LinearLayout>  <!-- Vehicule Info End -->
+
+
+
+    <!--Client Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+
+    </LinearLayout>  <!--Client Info -->
+
+</LinearLayout>

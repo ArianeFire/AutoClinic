@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Vehicule Info ===================== -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <!-- Marque ImageLayout ========================== -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/marqueImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bmw"
+                />
+
+        </LinearLayout>  <!--Marque ImageLayout End -->
+
+        <!--Marque Info Part =========== -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/margin_form_display"
+            >
+
+            <!--Modele Logo  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/modeleImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/x3"
+                    />
+
+                <TextView
+                    android:id="@+id/modeleName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_form_display_compo"
+                    android:text="X3"
+                    android:textSize="@dimen/titileTextSize"
+                    android:layout_gravity="bottom"
+                    />
+
+            </LinearLayout> <!--Modele logo End-->
+
+            <!-- Immatriculation part -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_form_display"
+
+                >
+
+                <TextView
+                    android:id="@+id/immatriculation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mat : BG589PM"
+                    android:textSize="@dimen/titileTextSize"
+                    />
+
+            </LinearLayout> <!--Immatriculation part End -->
+
+            <!-- Num Chasset -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_form_display"
+                >
+
+                <TextView
+                    android:id="@+id/numChasset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N°C : 789522"
+                    android:textSize="@dimen/titileTextSize"
+                    />
+
+            </LinearLayout> <!-- Num Chasset End-->
+
+            <!--NiveauCarburant  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_form_display"
+                >
+
+                <TextView
+                    android:id="@+id/niveauCarburant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N.C : 1/4"
+                    android:textSize="@dimen/titileTextSize"
+                    />
+
+            </LinearLayout> <!--NiveauCarburant End -->
+
+            <!--Kilometrage  -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_form_display"
+                >
+
+                <TextView
+                    android:id="@+id/kilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KIL : 1/4"
+                    android:textSize="@dimen/titileTextSize"
+                    />
+
+            </LinearLayout> <!--Kilometrage End -->
+
+        </LinearLayout>   <!-- Marque Info End -->
+
+        <!--Fiche Info Part =========== -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/margin_form_display"
+            android:paddingTop="@dimen/margin_form_display"
+            >
+
+            <TextView
+                android:id="@+id/assurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atlantique"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/titileTextSize"
+                />
+
+            <TextView
+                android:id="@+id/ficheName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rep. BMW BG89752"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="@dimen/margin_form_display"
+                android:textSize="@dimen/titileTextSize"
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="21 juin 2016 20h10min"
+                android:layout_marginTop="@dimen/margin_form_display"
+                android:textSize="@dimen/titileTextSize"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>  <!-- Vehicule Info End -->
+
+
+
+    <!--Client Info -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <!--Info Client Part -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingTop="@dimen/margin_form_display_compo"
+            android:paddingLeft="@dimen/margin_form_display_compo"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/workk"
+                    android:layout_marginRight="@dimen/margin_form_display"
+                    />
+                <TextView
+                    android:id="@+id/client_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:textSize="@dimen/titileTextSize"
+                    android:layout_marginBottom="3dp"
+                    android:text="Ariane Fire"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_form_display"
+                    android:src="@drawable/ic_email_black_48dp"
+                    />
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/titileTextSize"
+                    android:text="ArianeFire@gmail.com"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_form_display"
+                    android:src="@drawable/ic_home_black_48dp"
+                    />
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/titileTextSize"
+                    android:text="Cite Universitare"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_form_display"
+                    android:src="@drawable/ic_contact_phone_black_48dp"
+                    />
+                <TextView
+                    android:id="@+id/tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/titileTextSize"
+                    android:text="+212 6 26 37 50 43"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_form_display"
+                    android:src="@drawable/ic_contact_phone_black_48dp"
+                    />
+                <TextView
+                    android:id="@+id/telm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/titileTextSize"
+                    android:text="+212 6 26 37 50 43"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_form_display"
+                    android:src="@drawable/ic_contact_phone_black_48dp"
+                    />
+                <TextView
+                    android:id="@+id/fax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="@dimen/titileTextSize"
+                    android:text="55555"
+                    />
+            </LinearLayout>
+
+        </LinearLayout> <!--Info Client Part End-->
+
+        <!--Info Employer -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="3dp"
+                android:textSize="@dimen/titileTextSize"
+                android:text="Liste des Employés"
+                android:textStyle="bold"
+                />
+
+            <ListView
+                android:id="@+id/employList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+        </LinearLayout> <!--Info Employe Part -->
+
+        <!-- Piece Image Part -->
+        <LinearLayout
+            android:id="@+id/groupLayout"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="3dp"
+                android:textSize="@dimen/titileTextSize"
+                android:text="Photo des pieces"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout> <!-- Piece Image Part  End-->
+
+    </LinearLayout>  <!--Client Info -->
+
+</LinearLayout>

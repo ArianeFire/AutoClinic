@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<fragment
+        android:layout_width="0dp"
+        android:layout_weight="m2"
+        android:layout_height="match_parent"
+        android:name="com.autoclinic.FRAGMENT.AssuranceFragment"
+        android:id="@+id/fragment" /> -->
+
+    <LinearLayout
+        android:background="#000000"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize"
+            android:textStyle="bold"
+            android:textColor="@color/fab_material_white"
+            android:text="Liste des Assurances"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/assurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/maginRightFrag"
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        android:background="@drawable/border_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+
+    </LinearLayout>
+
+    <!--<com.software.shell.fab.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        />-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/fab_add"
+        android:layout_gravity="bottom|end"/>
+</LinearLayout>
